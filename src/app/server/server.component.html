@@ -1,0 +1,21 @@
+<p>Server with id {{ serverId }} is {{getServerStatus() }}</p>
+<h1 *ngIf="show">SRAVANTHI</h1>
+
+<p *ngFor=" let item of data">
+  {{item.name}}
+  {{item.color}}
+</p>
+<button [ngStyle]="{'font-style':'italic','color':'red'}">NGSTYLE</button>
+<br>
+<button (click)="onClick()">Greet</button><!--eventbinding-->
+<input type="text" [value]="name"> <!--propertybinding-->
+<div [ngSwitch]="game">
+  <div *ngSwitchCase="'red'">this is {{game}}</div>
+  <div *ngSwitchCase="'yellow'">this is yellow</div>
+</div>
+
+<br>
+<!-- service -->
+<button (click)="onEnroll()">ENROLL</button>
+<h1>SERVER</h1>
+
